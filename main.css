@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+html,
+body {
+	font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+header {
+	background-image: url('/images/bg-hero-desktop.svg');
+	background-color: hsl(193, 100%, 96%);
+}
+
+h1 {
+	font-family: 'Poppins', sans-serif;
+}
+
+footer {
+	padding-top: 150px;
+	background-color: hsl(192, 100%, 9%);
+}
+
+.huddle li:nth-child(1) {
+	list-style-image: url('/images/icon-location.svg');
+}
+
+.huddle li:nth-child(2) {
+	list-style-image: url('/images/icon-phone.svg');
+}
+
+.huddle li:nth-child(3) {
+	list-style-image: url('/images/icon-email.svg');
+}
+
+footer li {
+	list-style-type: none;
+	color: whitesmoke;
+}
+
+footer a:hover {
+	text-decoration: none;
+}
+
+.footer-infos li,
+.btn-primary {
+	transition: transform 1s;
+}
+
+.footer-infos li:hover {
+	color: hsl(322, 100%, 66%);
+	transform: translateY(-10%);
+}
+
+.white-logo {
+	filter: invert(94%) sepia(77%) saturate(0%) hue-rotate(352deg)
+		brightness(108%) contrast(101%);
+}
+
+.btn-primary:hover {
+	transform: translateY(-10%);
+}
+
+.btn-link {
+	background-color: hsl(322, 100%, 66%);
+	border: none;
+	box-shadow: 0 0 10px hsl(322, 100%, 66%);
+	transition: transform 1s;
+}
+
+.btn-link:hover {
+	transform: translateY(-10%);
+	background-color: hsl(322, 100%, 66%);
+	text-decoration: none;
+}
+
+.btn-link:focus {
+	background-color: hsl(322, 100%, 66%);
+	text-decoration: none;
+}
+
+.ready-to-build {
+	position: relative;
+	top: 150px;
+}
+
+.card {
+	padding: 50px;
+}
+
+@media (max-width: 525px) {
+	header {
+		background-image: url('/images/bg-hero-mobile.svg');
+	}
+
+	.build-community {
+		text-align: center;
+	}
+
+	.card h1,
+	.card p {
+		text-align: center;
+	}
+}
